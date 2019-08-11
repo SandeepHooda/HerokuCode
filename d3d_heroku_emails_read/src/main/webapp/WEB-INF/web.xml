@@ -1,0 +1,59 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <welcome-file-list>
+    
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  <servlet-name>SendEmail</servlet-name>
+  <servlet-class>SendEmail</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>SendEmail</servlet-name>
+    <url-pattern>/SendEmail</url-pattern>
+  </servlet-mapping>
+  
+
+  
+  
+ <servlet>
+  <servlet-name>Read_d3d_emails</servlet-name>
+  <servlet-class>Read_d3d_emails</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>Read_d3d_emails</servlet-name>
+    <url-pattern>/Read_d3d_emails</url-pattern>
+  </servlet-mapping>
+ 
+   <servlet>
+   	<servlet-name>SendSMS</servlet-name>
+   	<display-name>SendSMS</display-name>
+   	<description></description>
+   	<servlet-class>com.phone.text.SendSMS</servlet-class>
+   </servlet>
+   
+<servlet-mapping>
+	<servlet-name>SendSMS</servlet-name>
+	<url-pattern>/SendSMS</url-pattern>
+</servlet-mapping>
+
+   <servlet>
+   	<servlet-name>MakeACall</servlet-name>
+   	<display-name>MakeACall</display-name>
+   	<description></description>
+   	<servlet-class>com.phone.call.MakeACall</servlet-class>
+   </servlet>
+   
+
+<servlet-mapping>
+	<servlet-name>MakeACall</servlet-name>
+	<url-pattern>/MakeACall</url-pattern>
+</servlet-mapping>
+
+
+</web-app>
